@@ -23,6 +23,7 @@ main {
 .informacoes .titulo {
   text-align: center;
   font-size: 1.5rem;
+  width: 416px;
   margin: 1rem 0;
   color: hsl(223, 47%, 23%);
 }
@@ -114,9 +115,42 @@ main {
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 416px) {
   body {
     background-image: url(../images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
+  }
+  main {
+    max-width: 300px;
+  }
+  .cartao img {
+    max-width: 300px;
+  }
+  .informacoes .titulo {
+    margin-left: 10px;
+    max-width: 250px;
+  }
+  .informacoes .descricao-item {
+    margin-left: 10px;
+    max-width: 250px;
+  }
+
+  .btn {
+    max-width: 250px;
+    margin-left: 25px;
+  }
+  .cartao .item img {
+    margin-left: 20px;
+  }
+
+  .cartao .item .titulo-item {
+    width: 300px;
+  }
+
+  .cartao .item .price {
+    margin-left: 70px;
+  }
+  .cartao .item .change {
+    margin-left: -160px;
   }
 }
