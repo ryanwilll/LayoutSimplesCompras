@@ -5,6 +5,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  right: 0px;
   background-color: hsl(225, 100%, 94%);
 }
 
@@ -115,42 +116,13 @@ main {
   }
 }
 
-@media only screen and (max-width: 416px) {
+@media (max-width: 460px) {
   body {
     background-image: url(../images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
   }
+
   main {
-    max-width: 300px;
-  }
-  .cartao img {
-    max-width: 300px;
-  }
-  .informacoes .titulo {
-    margin-left: 10px;
-    max-width: 250px;
-  }
-  .informacoes .descricao-item {
-    margin-left: 10px;
-    max-width: 250px;
-  }
-
-  .btn {
-    max-width: 250px;
-    margin-left: 25px;
-  }
-  .cartao .item img {
-    margin-left: 20px;
-  }
-
-  .cartao .item .titulo-item {
-    width: 300px;
-  }
-
-  .cartao .item .price {
-    margin-left: 70px;
-  }
-  .cartao .item .change {
-    margin-left: -160px;
+    transform: scale(0.7);
   }
 }
